@@ -1,0 +1,890 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", serif, !important;
+}
+
+.linea{
+    height: 4em;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+}
+
+/* - INICIO HEADER - */
+.header_nav{
+    width: 100%;
+    background-color: #0a141d;
+    height: 80px;    
+}
+
+.htl{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    text-align:center ;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+.nav_colapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+    margin-left: 1em;
+    color: white;
+    background-color:#0d2033;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px){
+    .logo{
+        width: 100px;
+        font-size: medium;
+        transition-duration: 1s;
+    }
+}
+
+
+.navbox{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+    background-color: #0a1a2a;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon{
+    background-color: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+
+.navurl{
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    background-color: #0a141d;
+    font-size: 17px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.navurl:hover{
+    background-color: #0a1a2a;
+    color: aqua;
+    transition: 0.5s;
+}
+
+/* - FIN HEADER - */
+
+/* - INICIO BUSCADOR INDEX- */
+.sb{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.buscador {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    height: 50px;
+}
+
+.buscador .search{
+    width: 100%;
+    height: 30px;
+    border-radius: 100px;
+    padding: 0rem 1.5rem;
+    
+}
+/* - FIN BUSCADOR INDEX- */
+
+/* - INICIO MAIN INDEX - */
+body{
+    background-color: #0d2033;
+    width: auto;
+    height: auto;
+}
+
+.main_index{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    
+}
+.productos{
+    width: 100%;
+    max-width: 1200px;
+    max-height: 550px;
+    margin: auto;
+    background-color: #0a141d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+}
+.productos img{
+    max-width: 290px;
+    max-height: 163px;
+    width: 290px;
+    height: 163px;
+}
+
+@media (min-width: 800px){
+    .productos img{
+        max-width: 436px;
+        max-height: 245px;
+        width: 436px;
+        height: 245px;
+        margin: auto;
+    }
+    .main_index{
+        align-items: stretch;
+        
+    }
+    
+}
+    
+section h2{
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 10px;
+}
+/* - FIN MAIN INDEX - */
+
+/* - INICIO PIE DE PAGINA - */
+.pie_pagina{
+    width: 100%;
+    background-color: #0a141d;
+    margin-top: 30px;
+    
+}
+
+.pie_pagina .pp1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie_pagina .pp1 .pp01 figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie_pagina .pp1 .pp01 figure img{
+    width: 200px;
+    border-radius: 150px;
+}
+/* - Color Texto - */
+.pie_pagina .pp1 .pp01 h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie_pagina .pp1 .pp01 p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie_pagina .pp1 .pp01 .red_social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie_pagina .pp1 .pp01 .red_social a:hover{
+    color: aqua;
+}
+
+.pie_pagina .pp2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie_pagina .pp2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie_pagina .pp1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/* - FIN PIE DE PÁGINA - */
+
+/* - INICIO MAIN SOBRE NOSOTROS MOBILE FIRST- */
+
+/* - SECCION UNO - */
+.secciones_sn{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+}
+
+.sobre_nosotros{
+    background-color: #0a1a2a;
+    width: 100%;
+    display: flexbox;
+    height: 100%;
+}
+
+.sobre_nosotros_contenedor1{
+    display: flex;
+    background-color: #0a1a2a;
+    width: 100%;
+    max-width: 1200px;
+    text-align:center ;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5vh 5vh;
+}
+
+.sobre_nosotros h1{
+    color: white;
+    font-weight: bold;
+}
+
+.SnP{
+    color: white;
+}
+
+.sobre_nosotros img{
+    width: 0px;
+    height: 0px;
+}
+
+.sn_texto1{
+    display: flexbox;
+    height: 50%;
+    padding: 0% 0%;
+}
+
+@media (min-width: 800px) {
+    .sobre_nosotros img{
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        border-style:inset ;
+    }
+    
+    .sn_texto1{
+        display: flexbox;
+        align-content: flex-start;
+        padding: 0% 10%;
+    }
+}
+
+/* - SECCION DOS - */
+
+.sn_texto2{
+    display: flexbox;
+    height: 100%;
+    padding: 5vh 5vh;
+}
+
+.sn_icono{
+    color: rgba(127, 255, 212, 0.678);
+    font-size: 100px;
+    margin: 1rem;
+    
+}
+
+.sn_icono:hover{
+    color: aqua;
+    font-size: 120px;
+    transition: 1s;
+}
+
+@media (min-width: 800px){
+    .sn_texto2{
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: center;      
+    }
+    .sn_texto2a{
+        margin: 2rem;        
+    }
+}
+
+/* - SECCION TRES - */
+
+.sn_texto3{
+    display: flexbox;
+    height: 100%;
+    background-color: #0a1a2a;
+    padding: 5vh 5vh;
+}
+
+.sn_texto3 p{
+    text-align: justify;
+}
+
+.sn_texto3 h2{
+    color: white;
+}
+
+.sn_texto3 img{
+    border-radius: 100px;
+    height: 60%;
+    width: 60%;
+    margin: 1rem;
+}
+
+@media (min-width: 800px){
+    .sn_texto3{
+        display: flex;
+    }
+    .sobre_nosotrosContenedor2{
+        display: flex;
+        max-width: 1200px;
+    }
+    .sn_texto3 img{
+        height: 80%;
+        width: 60%;
+        margin: 3rem;
+    }
+    .sn_texto3a{
+        margin: 3rem;
+    }
+}
+/* - FIN BODY SOBRE NOSOTROS- */
+
+/* - CORRECION PIE DE PAGINA SOBRE NOSOTROS- */
+.pie_pagina_sn{
+    margin-top: 0px;
+}
+
+/* - INICIO MAIN CONTACTANOS- */
+.main_contact{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-items:  center;
+    justify-content: center;
+    align-content: center;
+    margin: 2vw 2vh;
+
+}
+.contacto{
+    height: 6vh;
+    width: auto;
+    display: flex;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3vw;
+}
+.contacto div{
+    text-align: center;
+}
+
+.info_contacto{
+    width: 100%;
+    max-width: 800px;
+    border-style:solid;
+    border-radius: 25px;
+    border-color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: justify;
+    padding: 2vw 2vw;
+}
+.info_contacto div{
+    width: 80%;
+    padding: 0vw 2vw;
+    
+}
+
+.consulta{
+    width: 100%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    margin: 5px 0px;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+    padding: 1vw;
+    border: 2px solid black; 
+    border-radius: 5px;
+    background-color: white; 
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.formulario button {
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.formulario button:hover {
+        background-color: black;
+        color: white;
+}
+
+.icono_cont{
+    color: #0d2033;
+    margin: 1vw;
+}
+@media (min-width: 800px){
+    .main_contact{
+        height: 480px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .info_contacto{
+        width: 80%;
+        font-size: 1.5vw;
+        padding: 2vw 2vw;
+        justify-content: flex-start;
+        margin: 10px;
+    }
+    .info_contacto div{
+        width: 80%;
+        padding: 0vw 2vw;
+        margin: 10px;
+        
+    }
+    .consulta{
+        margin: 10px;
+        width: 100%;
+        font-size: 1vw;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        text-align: left;
+        max-width: 400px;
+        max-height: 600px;
+    }
+
+    .contacto{
+        width: 80%;
+        font-size: 2vw;
+    }
+    .pie_pagina_contact{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
+}
+/* - FIN MAIN CONTACTANOS- */
+
+
+/* - INICIO INTRO JUEGOS- */
+.contenedor_intro{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contenedor_intro img{
+    width: 0px;
+    height: 0px;
+}
+.intro_juegos{
+    padding: 2rem 4rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro_juegos h1{
+    color: white;
+    font-weight: bold;
+}
+.intro_juegos p{
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+}
+.intro_juegos a{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.intro_juegos a:hover{
+    color: aqua;
+    transition: 1s;
+}
+
+/* - FIN INTRO JUEGOS- */
+
+/* - INICIO MAIN JUEGOS- */
+.main_juegos{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+.prod_juegos{
+    display: flexbox;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 1500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.prod_juegos h2{
+    padding: 20px 30px;
+}
+.img_jg{
+    background-color: #0d2033;
+    max-width: 1200px;
+    max-height: 1500px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 0rem 1rem;
+}
+
+.pr_jg{
+    display: flexbox;
+    max-width: 1200px;
+    width: 100%;
+    max-height: none;
+    margin: auto;
+    background-color: #0a141d;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;    
+}
+
+.pr_jg .img_jg img{  
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+}
+
+.pr_jg .img_jg h4{
+    color: white;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    font-size: 12px;
+    padding: 0px 15px;
+
+}
+
+.pr_jg .img_jg p{
+    color: #efefef;
+    background-color: #0a1a2a;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.mostrar_todo{
+    margin: 1rem;
+}
+.carousel{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.texto_carousel{
+    color: white;
+    font-weight: bold;
+    background-color:#0a141db2;
+}
+
+@media (min-width: 1024px){
+    .main_juegos{
+        padding: 2rem 4rem;
+    }
+    .intro_juegos{
+        flex-direction: row;
+    }
+
+    .contenedor_intro img{
+        width: 400px;
+        height: 225px;
+        border-radius: 25px;
+    }
+    .texto_intro{
+        padding: 0rem 2rem;
+    }
+
+    .pr_jg{
+        display: flex;
+        width: 100%;
+        max-height: 550px;
+        margin: auto;
+        background-color: #0a141d;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 30px;
+    }
+    
+    .img_jg{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        max-height: 500px;
+        width: 200px;
+        height: 500px;
+        background-color: #0d2033;
+        margin: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: none;
+ 
+    }
+
+    .pr_jg .img_jg img{
+        width: 200px;
+        height: 300px;
+    }
+    
+    .pr_jg .img_jg h4{
+        color: white;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: none;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 0px 0px;
+    
+    }
+    
+    .pr_jg .img_jg p{
+        color: #efefef;
+        background-color: #0a1a2a;
+        width: 50%;
+        height: 10%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* - FIN MAIN JUEGOS- */
+
+/* - INICIO MAIN TARJETAS JUEGOS- */
+.main_tarjetas_juegos{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+.prod_tarjetas{
+    max-width: 800px;
+}
+.filtros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px;
+    max-width: 470px;
+    background-color: #0a141d;
+
+}
+
+.filtros label{
+    color: white;
+    font-size: 10px;
+}
+
+@media (min-width: 1024px){
+    .main_tarjetas_juegos{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+    }
+    .filtros{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        margin-right: 20px;
+        padding: 1vw 1vw;
+    }
+    .filtros label{
+        font-size: 15px;
+    }
+    .img_tj{
+        width: 100px;
+        height: 250px;
+    }
+    .img_tj img{
+        max-width: 100px;
+        max-height: 150px;
+        width: 100px;
+        height: 150px;
+    }
+    .pr_tj .img_tj h4{
+        width: 100%;
+        height: 20%;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+    .pr_tj .img_tj p{
+        font-size: 12px;
+    }
+    
+}
+
+/* - FIN MAIN TARJETAS JUEGOS- */
