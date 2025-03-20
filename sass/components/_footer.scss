@@ -1,8 +1,9 @@
 @use "../utilities/extends" as *;
 @use "../components/mq" as *;
+@use "../utilities/variables" as *;
 .pie_pagina{
     width: 100%;
-    background-color: #0a141d;
+    background-color: $color_secundario;
     margin-top: 30px;
     .pp1{
         width: 100%;
@@ -20,12 +21,12 @@
         }
         .pp01{ 
             h2{
-            color: white;
+            color: rgb(255, 255, 255);
             margin-bottom: 25px;
             font-size: 20px;
             }
             p{
-                color: #efefef;
+                color: rgb(239, 239, 239);
                 margin-bottom: 10px;
             }
             figure{
@@ -44,13 +45,13 @@
                     width: 45px;
                     height: 45px;
                     line-height: 45px;
-                    color: white;
+                    color: rgb(255, 255, 255);
                     margin-right: 10px;
-                    background-color: #0d2033;
+                    background-color: $color_primario;
                     text-align: center;
                     transition: all 300ms ease;
                     &:hover{
-                        color: aqua;
+                        color: rgb(0, 255, 255);
                     }
                     
                 }
@@ -59,10 +60,10 @@
     }
     
     .pp2{
-        background-color: #0a1a2a;
+        background-color: $color_terciario;
         padding: 15px 10px;
         text-align: center;
-        color: white;
+        color: rgb(255, 255, 255);
         small{
             font-size: 15px;
         }

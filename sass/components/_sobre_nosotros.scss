@@ -1,5 +1,6 @@
 @use "../utilities/extends" as *;
 @use "../components/mq" as *;
+@use "../utilities/variables" as *;
 .secciones_sn{
     align-items: center;
     justify-items: center;
@@ -8,7 +9,7 @@
     text-align:center;
 }
 .sobre_nosotros{
-    background-color: #0a1a2a;
+    background-color: $color_terciario;
     width: 100%;
     display: flexbox;
     height: 100%;    
@@ -35,7 +36,7 @@
     height: 50%;
     padding: 0% 0%;
     h1{
-        color: white;
+        color: rgb(255, 255, 255);
         font-weight: bold;
     }
     @include mediaquerymin800{
@@ -80,13 +81,13 @@
 .sn_texto3{
     display: flexbox;
     height: 100%;
-    background-color: #0a1a2a;
+    background-color: $color_terciario;
     padding: 5vh 5vh;
     p{
         text-align: justify;
     }
     h2{
-        color: white;
+        color: rgb(255, 255, 255);
     }
     @include mediaquerymin800{
         display: flex;      
@@ -116,7 +117,7 @@
     }
 }
 .SnP{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
