@@ -11,8 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <title>SOBRE NOSOTROS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CONTACTANOS</title>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
@@ -25,7 +25,7 @@
               </button>
               <div class="collapse navbar-collapse nav_colapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbox">
-                  <a class="nav-link navurl" aria-current="page" href="index.html">Principal</a>
+                  <a class="nav-link navurl" aria-current="page" href="../index.html">Principal</a>
                   <a class="nav-link navurl" href="juegos.html">Juegos</a>
                   <a class="nav-link navurl" href="tarjetas_juegos.html">Tarjetas</a>
                   <a class="nav-link navurl" href="sobre_nosotros.html">Sobre Nosotros</a>
@@ -35,53 +35,46 @@
             </div>
           </nav>
     </header>
-    <main>
-        <section class="sobre_nosotros secciones_sn">
-            <div class="sobre_nosotros_contenedor1">
-                <div class="sn_texto1">                
-                    <p class="SnP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempore!</p>
-                    <h1>Sobre JCGAMING</h1>
-                    <p class="SnP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur in fugit doloribus architecto! Id modi inventore voluptatibus, necessitatibus excepturi ullam enim eos dignissimos sit, illo vitae facere esse fugit?</p>
-                </div>                
-                <img src="./img/sobrenosotros/sn_juegos.jpg" alt="sobre_nosotros">
+    <main class="main_contact">
+        <section class="info_contacto">
+            <h1>Contactanos ya</h1> 
+            <div>Escríbenos para consultas, soporte o recomendaciones. ¡Estamos aquí!</div>
+            <div class="contacto">
+                <a href="#" class="fa-regular fa-envelope icono_cont"></a>
+                <div>JCGAMING@GMAIL.COM</div>
+            </div>
+            <div class="contacto">
+                <a href="#" class="fa-brands fa-whatsapp icono_cont"></a>
+                <div>+54 9 11 1234-1234</div>
             </div>
         </section>
-        <section class="sn_texto2 secciones_sn">
-            <div class="sn_texto2a">
-                <a class="fa-regular fa-chess-rook sn_icono"></a>
-                <p class="SnP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur in fugit doloribus architecto! Id modi inventore voluptatibus, necessitatibus excepturi ullam enim eos dignissimos sit, illo vitae facere esse fugit?</p>
-            </div>
-            <div class="sn_texto2a">
-                <a class="fa-regular fa-gem sn_icono"></a>
-                <p class="SnP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur in fugit doloribus architecto! Id modi inventore voluptatibus, necessitatibus excepturi ullam enim eos dignissimos sit, illo vitae facere esse fugit?</p>
-            </div>
-            <div class="sn_texto2a">
-                <a class="fa-regular fa-bookmark sn_icono"></a>
-                <p class="SnP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur in fugit doloribus architecto! Id modi inventore voluptatibus, necessitatibus excepturi ullam enim eos dignissimos sit, illo vitae facere esse fugit?</p>
-            </div>
-        </section>
-        <section class="sn_texto3 secciones_sn">
-            <div class="sobre_nosotrosContenedor2">
-                <img src="./img/sobrenosotros/sn_quienes_somos.jpg" alt="Quienes Somos">
-                <div class="sn_texto3a">
-                    <h2>Quienes Somos</h2>
-                    <p class="SnP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur in fugit doloribus architecto! Id modi inventore voluptatibus, necessitatibus excepturi ullam enim eos dignissimos sit, illo vitae facere esse fugit?</p>
-                </div>
-            </div>
+        <section class="consulta">
+            <form action="/sumbit" method="post" class="formulario"> <!--Contenedora-->
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" placeholder="Tu mail">
+                    
+                    <label for="opiniones">Deje su opinion aqui</label>
+                    <textarea name="opiniones" id="opiniones" placeholder="Escribe tu mensaje aqui"></textarea>
+              
+                <button type="submit">ENVIAR MENSAJE</button>
+            </form> 
         </section>
     </main>
-    <footer class="pie_pagina pie_pagina_sn">
+    <footer class="pie_pagina pie_pagina_contact">
         <!-- pp1 (pie de página 1) -->
         <div class="pp1">
             <div class="pp01">
                 <figure>
-                        <img src="./img/JC.png" alt="JCGAMING">
+                        <img src="../img/logo/jc.png" alt="JCGAMING">
                 </figure>
             </div>
             <div class="pp01">
                 <h2>SOBRE NOSOTROS</h2>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, maxime!</P>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, maxime!</P>
+                <P>Somos apasionados por los videojuegos y ofrecemos lo mejor.</P>
+                <P>Encuentra los últimos lanzamientos y ofertas exclusivas aquí.</P>
             </div>
             <div class="pp01">
                 <h2>SIGUENOS</h2>

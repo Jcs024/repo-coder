@@ -1,0 +1,124 @@
+@use "../utilities/extends" as *;
+@use "../components/mq" as *;
+.secciones_sn{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+}
+.sobre_nosotros{
+    background-color: #0a1a2a;
+    width: 100%;
+    display: flexbox;
+    height: 100%;    
+}
+.sobre_nosotros_contenedor1{
+    @extend %flexBasico;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5vh 5vh;
+    img{
+        width: 0px;
+        height: 0px;
+        @include mediaquerymin800{
+            height: 100%;
+            width: 100%;
+            border-radius: 30px;
+            border-style:inset ;
+        }
+    }
+}
+.sn_texto1{
+    display: flexbox;
+    height: 50%;
+    padding: 0% 0%;
+    h1{
+        color: white;
+        font-weight: bold;
+    }
+    @include mediaquerymin800{
+        display: flexbox;
+        align-content: flex-start;
+        padding: 0% 10%;
+    }
+}
+
+.sn_texto2{
+    display: flexbox;
+    height: 100%;
+    padding: 5vh 5vh;
+    @include mediaquerymin800{
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: center;       
+    }
+}
+
+.sn_texto2a{
+    @include mediaquerymin800{
+        margin: 2rem;        
+    }
+}
+.sn_icono{
+    color: rgba(127, 255, 212, 0.678);
+    font-size: 100px;
+    margin: 1rem;
+    &:hover{
+        color: aqua;
+        font-size: 120px;
+        transition: 1s;
+    }
+}
+
+
+.sn_texto3{
+    display: flexbox;
+    height: 100%;
+    background-color: #0a1a2a;
+    padding: 5vh 5vh;
+    p{
+        text-align: justify;
+    }
+    h2{
+        color: white;
+    }
+    @include mediaquerymin800{
+        display: flex;      
+    }
+}
+.sobre_nosotrosContenedor2{
+    img{
+        border-radius: 100px;
+        height: 60%;
+        width: 60%;
+        margin: 1rem;
+        @include mediaquerymin800{
+            height: 80%;
+            width: 60%;
+            margin: 3rem;
+        }
+    }
+    @include mediaquerymin800{
+        display: flex;
+        max-width: 1200px;
+    }
+    
+}
+.sn_texto3a{
+    @include mediaquerymin800{
+        margin: 3rem;
+    }
+}
+.SnP{
+    color: white;
+}
+
+
+
+

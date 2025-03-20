@@ -1,0 +1,73 @@
+
+@use "../utilities/extends" as *;
+@use "../components/mq" as *;
+.header_nav{
+    width: 100%;
+    background-color: #0a141d;
+    height: 80px;    
+}
+
+.htl{
+    @extend %flexBasico;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+.nav_colapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    @extend %flexBasico;
+    margin: auto;
+    height: 50px;
+    width: 250px;
+    margin-left: 1em;
+    color: white;
+    background-color:#0d2033;
+    font-size: 35px;
+    font-weight: bold;
+    @include mediaquerymax800{
+        width: 100px;
+        font-size: medium;
+        transition-duration: 1s;
+    }
+}
+
+.navbox{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+    background-color: #0a1a2a;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon{
+    background-color: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+
+.navurl{
+    @extend %flexBasico;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    background-color: #0a141d;
+    font-size: 17px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+
+.navurl:hover{
+    background-color: #0a1a2a;
+    color: aqua;
+    transition: 0.5s;
+}
+

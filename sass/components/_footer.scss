@@ -1,0 +1,82 @@
+@use "../utilities/extends" as *;
+@use "../components/mq" as *;
+.pie_pagina{
+    width: 100%;
+    background-color: #0a141d;
+    margin-top: 30px;
+    .pp1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        @include mediaquerymax800{
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+        .pp01{ 
+            h2{
+            color: white;
+            margin-bottom: 25px;
+            font-size: 20px;
+            }
+            p{
+                color: #efefef;
+                margin-bottom: 10px;
+            }
+            figure{
+                width: 100%;
+                height: 100%;
+                @extend %flexBasico;
+                img{
+                    width: 200px;
+                    border-radius: 150px;
+                }
+            }
+            .red_social{
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: white;
+                    margin-right: 10px;
+                    background-color: #0d2033;
+                    text-align: center;
+                    transition: all 300ms ease;
+                    &:hover{
+                        color: aqua;
+                    }
+                    
+                }
+            } 
+        }
+    }
+    
+    .pp2{
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+        small{
+            font-size: 15px;
+        }
+    }
+}
+/* - CORRECION PIE DE PAGINA SOBRE NOSOTROS- */
+.pie_pagina_sn{
+    margin-top: 0px;
+}
+@include mediaquerymin800{    
+    .pie_pagina_contact{
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+

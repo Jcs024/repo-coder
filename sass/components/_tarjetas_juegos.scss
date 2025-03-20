@@ -1,0 +1,86 @@
+@use "../utilities/extends" as *;
+@use "../components/mq" as *;
+.main_tarjetas_juegos{
+    
+    @extend %flexBasico;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    align-content: center;
+    @include mediaquery1024{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+    }
+    
+    .prod_tarjetas{
+        max-width: 800px;
+    }
+    .img_tj{
+        @include mediaquery1024{
+            width: 100px;
+            height: 250px;
+        }
+        img{
+            @include mediaquery1024{
+                max-width: 100px;
+                max-height: 150px;
+                width: 100px;
+                height: 150px; 
+            }
+        }
+        h4{
+            @include mediaquery1024{
+                width: 100%;
+                height: 20%;
+                margin: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: 10px; 
+            }
+        }
+        p{
+            @include mediaquery1024{
+                font-size: 12px;
+            }
+        }
+        &:hover{
+            .comprar {
+                font-size: 15px;
+                padding: 10px;
+                @include mediaquery1024{
+                    font-size: 12px;
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+.filtros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px;
+    max-width: 470px;
+    background-color: #0a141d;
+    @include mediaquery1024{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        margin-right: 20px;
+        padding: 1vw 1vw;
+    }
+    label{
+        color: white;
+        font-size: 10px;
+        @include mediaquery1024{
+            font-size: 15px;
+        }
+    }
+    
+}
+
+
+
