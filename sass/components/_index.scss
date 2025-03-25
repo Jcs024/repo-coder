@@ -39,6 +39,13 @@ body{
     @include mediaquerymin800{
         align-items: stretch;
     }
+    section h1{
+        color: rgb(255, 255, 255);
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        padding: 10px 10px;
+    }
 }
 .productos{
     @extend %flexSinTexto;

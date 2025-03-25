@@ -181,6 +181,13 @@ body {
     align-items: stretch;
   }
 }
+.main_index section h1 {
+  color: rgb(255, 255, 255);
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px;
+}
 
 .productos {
   width: 100%;
@@ -475,6 +482,13 @@ body {
 .main_tarjetas_juegos .prod_tarjetas {
   max-width: 800px;
 }
+.main_tarjetas_juegos .prod_tarjetas h1 {
+  color: rgb(255, 255, 255);
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px;
+}
 @media (min-width: 1024px) {
   .main_tarjetas_juegos .img_tj {
     width: 100px;
@@ -700,6 +714,13 @@ body {
   margin: 10px;
   font-weight: bold;
   font-size: 3vw;
+}
+.contacto:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.contacto:hover a {
+  color: rgb(255, 255, 255);
 }
 @media (min-width: 800px) {
   .contacto {

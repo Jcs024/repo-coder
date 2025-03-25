@@ -17,6 +17,13 @@
     
     .prod_tarjetas{
         max-width: 800px;
+        h1{
+            color: rgb(255, 255, 255);
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            padding: 10px 10px;
+        }
     }
     .img_tj{
         @include mediaquery1024{
