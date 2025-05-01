@@ -2,6 +2,8 @@
 @use "../components/mq" as *;
 @use "../utilities/variables" as *;
 .pie_pagina{
+    position: relative;
+    z-index: 1;
     width: 100%;
     background-color: $color_secundario;
     margin-top: 30px;
@@ -75,6 +77,7 @@
 }
 @include mediaquerymin800{    
     .pie_pagina_contact{
+        position: relative;
         bottom: 0;
         width: 100%;
     }

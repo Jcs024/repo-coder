@@ -54,18 +54,35 @@
 }
 
 .main_juegos{
-    
+    position: relative;
     @extend %flexBasico;
     flex-direction: column;
     width: 100%;
     height: auto;
     max-height: none;
     align-content: center;
+    overflow: hidden;
+    max-width: 100vw;
     @include mediaquery1024{
-        padding: 2rem 4rem;
+        position: relative;
+        padding-bottom: 4rem; // da espacio al final
     }
-
     
+    .carousel-item {
+        height: auto;
+        overflow: hidden;
+        padding: 20px 30px;
+        img {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        max-height: 80vh; 
+        object-fit: cover;
+        }
+    } 
 }
 .prod_juegos{
     display: flexbox;
@@ -205,13 +222,38 @@
     margin: 1rem;
 }
 .carousel{
+    width: 100%;
+    max-width: 1440px; 
+    margin-bottom: 2rem;
+    z-index: 1;
+    margin: 0 auto;
+    display: block;
     @extend %flexBasico;
-    margin: 10px;
 }
+.carousel-item {
+    img {
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+#carouselMenos10 {
+    margin-bottom: 100px;
+}
+
 .texto_carousel{
     color: rgb(255, 255, 255);
     font-weight: bold;
     background-color:rgba(10, 20, 29, 0.698);
+    font-size: medium;
+    max-width: 80%;
+    .precio{
+        margin-bottom: 5px;
+    }
+    h5{
+        font-size: medium;
+    }
     .comprar{
         display: none;
     }
