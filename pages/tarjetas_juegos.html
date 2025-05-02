@@ -39,8 +39,12 @@
     </header>
     <section class="sb">
         <section class="buscador">        
-            <input type="search" class="search" placeholder="       Buscar...">
+            <input type="search" id="buscador" class="search" placeholder="Buscar...">
         </section>
+        <section id="resultados-busqueda" class="prod_juegos prod_tarjetas" style="display: none;">
+            <h1>Resultados</h1>
+            <div class="pr_jg pr_tj" id="contenedor-resultados"></div>
+        </section>         
     </section>
     <!-- Filtros se puede ordenar con css o tablas-->
     <main class="main_tarjetas_juegos">
@@ -140,5 +144,6 @@
     </footer>
 </body>
 <script src="../js/tarjetas.js"></script>
+<script src="../js/carouseles.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

@@ -73,7 +73,6 @@ function generarCarrusel({ id, juegos, rutaImagen }) {
 
   const inner = contenedor.querySelector('.carousel-inner');
   const indicators = contenedor.querySelector('.carousel-indicators');
-
   inner.innerHTML = "";
   indicators.innerHTML = "";
 
@@ -100,3 +99,4 @@ function generarCarrusel({ id, juegos, rutaImagen }) {
 }
 
 carouseles.forEach(generarCarrusel);
+

@@ -2,9 +2,12 @@
 @use "../components/mq" as *;
 @use "../utilities/variables" as *;
 .header_nav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     background-color: $color_secundario;
-    height: 80px;    
+    height: 80px; 
 }
 
 .htl{

@@ -22,7 +22,7 @@
         width: 100%;
         flex-direction: column;
         max-width: 1200px;
-        padding: 2rem 4rem;
+        padding: 1rem 2rem;
         h1{
             color: rgb(255, 255, 255);
             font-weight: bold;
@@ -43,6 +43,7 @@
         }
         @include mediaquery1024{
             flex-direction: row;
+            padding: 2rem 4rem;
         }
     }
     .texto_intro{
@@ -92,7 +93,7 @@
     height: auto;
     width: 100%;
     max-width: 1200px;
-    max-height: 1500px;
+    max-height: auto;
     h2{
         padding: 20px 30px;
     }
@@ -100,19 +101,20 @@
 }
 .pr_jg{
     display: flexbox;
-    max-width: 1200px;
+    max-width: 600px;
     width: 100%;
     max-height: none;
     margin: auto;
     background-color: $color_secundario;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px;
+    padding: 1vh 2vh;
     @include mediaquery1024{
         display: flex;
         width: 100%;
         max-height: 550px;
         margin: auto;
+        max-width: 1200px;
         background-color: $color_secundario;
         justify-content: space-around;
         align-items: center;
@@ -130,12 +132,15 @@
     max-height: 1500px;
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 200px;
     text-align: center;
     justify-content: space-around;
     align-items: center;
     margin: 10px 0px;
-    padding: 0rem 1rem;
+    @include mediaquery1024{
+        height: 150px;
+        padding: 0rem 1rem;
+    }
     .comprar{
         display: none;
     }
@@ -151,7 +156,8 @@
             background-color: rgba(4, 217, 255, 0.808);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(4,217,255,0.71);
-            width: 100%;
+            width: 80%;
+            max-width: 200px;
             height: auto;
             margin: auto;
             @include mediaquery1024{
@@ -179,8 +185,10 @@
         padding: none;
     }
     img{  
-        width: 5rem;
-        height: 5rem;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        flex-shrink: 0;
         border-radius: 5px;
         @include mediaquery1024{
             width: 200px;
@@ -191,10 +199,9 @@
         @extend %flexBasico;
         color: rgb(255, 255, 255);
         width: 100%;
-        height: 20%;
+        height: auto;
         margin: 1vw;
-        font-size: 12px;
-        padding: 0px 15px;
+        font-size: 1rem;
         @include mediaquery1024{
             margin: none;
             margin-top: 20px;
@@ -210,7 +217,7 @@
         background-color: $color_terciario;
         width: auto;
         height: auto;
-        margin: auto;
+        margin: 1rem;
         @include mediaquery1024{
             width: 50%;
             height: 10%;
@@ -223,12 +230,14 @@
 }
 .carousel{
     width: 100%;
-    max-width: 1440px; 
     margin-bottom: 2rem;
     z-index: 1;
     margin: 0 auto;
     display: block;
     @extend %flexBasico;
+    @include mediaquery1024{
+        max-width: 1200px;
+    }
 }
 .carousel-item {
     img {
@@ -243,13 +252,27 @@
 }
 
 .texto_carousel{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
     background-color:rgba(10, 20, 29, 0.698);
     font-size: medium;
-    max-width: 80%;
+    max-width: 280px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    padding: 0px;
+    @include mediaquery1024{
+        max-width: 420px;
+    }
     .precio{
         margin-bottom: 5px;
+        font-size:small;
     }
     h5{
         font-size: medium;
@@ -270,7 +293,7 @@
             margin: auto;
             @include mediaquery1024{
                 width: 50%;
-                height: 10%;
+                height: auto;
                 margin: auto;
             }
         }
